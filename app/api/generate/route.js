@@ -35,7 +35,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("❌ Error in POST route:", error);
     return new Response(
-      JSON.stringify({ success: false, error: true, message: "Internal Server Error" }),
+      JSON.stringify({ success: false, error: true, message: "Internal Server Error, Error : " + error.message }),
       { status: 500 }
     );
   }
