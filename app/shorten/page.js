@@ -45,25 +45,25 @@ export default function Shorten() {
   };
 
   return (
-    <main className="h-screen w-full overflow-hidden p-10 flex justify-between items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-      <section className="grid grid-cols-2 gap-20">
-        <div className="h-[100vh] w-[150vh] p-10 rounded-lg flex flex-col justify-center ">
-          <h1 className="text-6xl font-bold font-sans pb-5">
+    <main className="min-h-screen w-full overflow-hidden p-10 flex flex-col lg:flex-row justify-between items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
+        <div className="h-auto lg:h-[100vh] w-full lg:w-[150vh] p-10 rounded-lg flex flex-col justify-center">
+          <h1 className="text-4xl lg:text-6xl font-bold font-sans pb-5">
             Shorten your links
           </h1>
-          <p className="text-2xl font-sans mt-1.5">
+          <p className="text-xl lg:text-2xl font-sans mt-1.5">
             Enter your link and get a short link
           </p>
         </div>
-        <div className="h-[100vh] w-[100vh] pr-0 pl-20 flex justify-center items-center">
-          <div className="flex flex-col gap-3">
+        <div className="h-auto lg:h-[100vh] w-full lg:w-[100vh] pr-0 pl-0 lg:pl-20 flex justify-center items-center">
+          <div className="flex flex-col gap-3 w-full">
             <input
               onChange={(e) => {
                 setUrl(e.target.value);
               }}
               value={url}
               name="url"
-              className="p-2 text-2xl rounded-lg shadow-lg text-black"
+              className="p-2 text-xl lg:text-2xl rounded-lg shadow-lg text-black"
               type="text"
               placeholder="Enter your link"
             />
@@ -72,7 +72,7 @@ export default function Shorten() {
                 setShortUrl(e.target.value);
               }}
               value={shorturl}
-              className="p-2 text-2xl rounded-lg shadow-lg text-black"
+              className="p-2 text-xl lg:text-2xl rounded-lg shadow-lg text-black"
               type="text"
               placeholder="Enter your short link"
             />
