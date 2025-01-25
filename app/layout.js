@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Smallr - URL shortener",
-  description: "Smallr is a URL shortener that makes it easy to create, share, and manage short links. Create your own custom short links with Smallr.",
+  description: "Smallr is a URL shortener that makes it easy to create, share, and manage short links. Create your own custom short links with Smallr. It is created by Sayantan Nandi, a student of FY BTech CS at SIT Pune. Smallr is easy to use and free to use. Try it now! No sign up required.",
 };
 
 export default function RootLayout({ children }) {
